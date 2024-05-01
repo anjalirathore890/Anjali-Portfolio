@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+    font-family: 'Montserrat';
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* cursor strat */
+.cursor {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+  
+  .outer {
+    border: 1px solid #000000;
+    mix-blend-mode: difference;
+  }
+  
+  .inner {
+    background: #7a4e99;
+    transition: 250ms ease-out;
+    mix-blend-mode: difference;
+  }
+  
+  .cursor.hover {
+    transform: translate(-50%, -50%) scale(4);
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .inner.hover {
+    background: #f7f7f7;
+    mix-blend-mode: difference;
+  }
+
+/* cursor end */
+/* header start */
+header{
+border-bottom: 1px solid rgba(45, 48, 50, 0.836);
+-webkit-box-shadow: 5px 6px 5px 8px rgba(65, 55, 55, 0.934);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.653);
+}
+nav{
+    padding: 0 60px;
+  
+}
+nav .navbar-brand img{
+    width: 25vh;
+}
+
+nav .nav-item li{
+padding-right: 0.3vw;
+justify-content: space-between;
+
+}
+
+.nav-link{
+font-size: 18px;
+color: black!important;
+}
+
+.nav-link:hover{
+    color: #7a4e99 !important;
+    text-decoration: underline;
+}
+@media (min-width:300px) and (max-width:1200px){
+    nav{
+        padding: 10px;
+    }
+}
+    
+/* navbar end */
+/* banner start */
+.section1{
+    width: 100%;
+  padding: 2vw 8vw;
+   background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#7a4e990c,#7a4e990e) ,  url(images/pngtree-flat-and-simple-technology-line-business-background-picture-image_1618233.jpg);
+
+}
+.section1 h1{
+    color: black !important;
+}
+
+.section1 p{
+    font-size: 20px;
+}
+
+.section1 .bn-img img{
+    width: 20vw;
+margin-left: 14vw;
+   margin-top: 6vw;
+   background-position: center;
+   background-size: cover;  
+   border-radius: 50%;
+   border: 3px solid black;
+
+
+}
+
+
+@media (min-width:300px) and (max-width:1200px){
+    .section1 .bn-img img{
+        width: 30vh;
+        margin: 12px;
+        
+        
+    } 
+    .section1 h1{
+        font-size: 1vh;
+        
+    }
+    .section1 p{
+        font-size: 2vh;
+    }
+    .section1{
+        padding: 1vw 6vw ;
+    }
+   
+}
+
+
+
+/* animated text  start*/
+.typing-text {
+    font-family: Arial, sans-serif;
+    font-size: 55px;
+    font-weight: 600;
+    padding-top: 12vh;
+    padding-bottom: 10px;
+    color: #7a4e99;
+  }
+  
+  #cursor {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px;
+    height: 44px;
+    font-weight: 600;
+    background-color: black;
+    animation: blink 0.6s infinite alternate;
+    
+  }
+  
+  @keyframes blink {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+/* animated text end */
+.section1 .btn{
+    border: 1px solid #7a4e99;
+    color: #7a4e99;
+    font-size: 18px;
+    
+}
+.section1 .btn:hover{
+    color: white;
+    background-color: #7a4e99;
+}
+
+
+
+
+/* banner end */
+/* about start */
+.About{
+    width: 100%;
+    color: #7a4e99;
+    padding: 2vw 6vw;
+
+}
+.About h1 span{
+    color: black;
+   
+}
+.About h1{
+text-align: center;
+font-weight: 900;
+padding-bottom: 8vh;
+font-size: 4vw;
+text-decoration: underline ;
+
+} 
+
+.About .content h4{
+font-size: 25px;
+font-weight: 600;
+}
+
+.About .content h4 span{
+    color: black;
+}
+.About .content p{
+    font-size: 20px;
+    color: black;
+}
+
+.About .sub-content h6{
+font-size: 25px;
+padding-top: 5vh;
+
+}
+
+.About img{
+    width: 36vw;
+}
+
+.About .sub-content h6{
+    color: #7a4e99;
+    font-size: 40px;
+    font-weight: 800;
+}
+.About .sub-content p{
+    color: black;
+    font-size: 20px;
+}
+
+@media (min-width:300px) and (max-width:1200px){
+    .About img{
+        width: 60vw;
+        margin: 10px 60px;
+    }
+    .About{
+        width: 100%;
+    }
+
+    .About .content {
+        margin: 10px 30px;
+    }
+    
+     
+    
+.About h1{
+    font-size: 4vh;
+    padding-bottom: 0;
+    padding-top: 20px;
+}
+
+.About .sub-content h6{
+    font-size: 25px;
+    margin: 0px 20px;
+    padding: 0;
+}
+
+.About .sub-content p{
+    font-size: 16px;
+    margin: 0px 20px;
+}
+.typing-text{
+    font-size: 35px;
+    padding-top: 2px;
+    font-weight: 600;
+}
+}
+
+/* about end */
+/* project start */
+.project-section{
+    width: 100%;
+    padding: 2vw 6vw;
+}
+
+.project-section .main-heading h1{
+    color: #7a4e99;
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 6vh;
+    font-size: 4vw;
+    text-decoration: underline;   
+}
+
+.project-section  span{
+    color: black;
+
+}
+
+
+.project-section  .image-wrap{
+height: 400px;
+width: 300px;
+border: 5px solid black;
+background-position:bottom;
+overflow: hidden;
+margin: 50px auto;
+
+}
+.project-section  .image-wrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: all 2s ease-in-out;
+}
+
+.project-section  .image-wrap img:hover{
+    object-position: bottom center;
+
+}
+
+
+@media (min-width:300px) and (max-width:1200px){
+    .project-section .main-heading h1{
+        font-size: 4vh;
+        padding-bottom: 0;
+        padding-top: 20px;
+    }
+    .project-section{
+     width: 100%;
+    }
+}
+
+
+/* prkject end */
+
+/* contact start */
+.contact{
+    width: 100%;
+padding: 2vh 8vw 10vh 8vw;
+background-color: #7a4e99;
+color: white;
+}
+
+.contact .main-heading h1{
+    color: black;
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 6vh;
+    font-size: 4vw;
+    text-decoration: underline;   
+}
+
+.contact  span{
+    color: white;
+
+}
+
+.contact .form{
+    width: 60vh;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.contact form{
+    background-color: rgba(255, 255, 255, 0.518);
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+
+.contact form .btn{
+    background-color: white;
+    
+}
+
+
+.contact .content{
+margin-left: 9vh;
+text-align: left;
+}
+
+.contact .content h4{
+    font-size: 20px;
+}
+
+.contact .content h1{
+    font-size: 60px;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact .content .box{
+    display: flex;
+    text-align: right;
+   
+}
+
+.contact .content i{
+font-size: 2vw;
+padding: 10px;
+
+}
+
+.contact .content .social-media
+{
+    display: flex;
+    font-size: 15vw;
+    padding-top: 20px;
+    
+}
+.contact .content .social-media i{
+    background-color: white;
+    color: #7a4e99;
+    margin: 2px;
+    border-radius: 50px;
+}
+
+.contact .content .social-media i:hover{
+    background-color: black;
+    color: white;
+}
+
+@media (min-width:300px) and (max-width:1200px){
+    .contact{
+        width: 100%;
+        height: auto;
+    }
+    .contact .main-heading h1{
+        font-size: 2vh;
+        padding-bottom: 10;
+        padding-top: 20px;
+    }
+    .contact .content h3{
+        font-size: 2vh;
+        margin-top: 2px;
+    }
+    .contact .content .social-media i{
+        background-color: white;
+        color: #7a4e99;
+        margin: 2px;
+        border-radius: 50px;
+        font-size: 2vh;
+    }
+}
+
+/* conatact end */
+
+/* footer start */
+footer{
+    width: 100%;
+    background-color: white;
+    color: #7a4e99;
+    padding: 10px 0px;
+}
+footer p{
+    color: #7a4e99;
+    font-size: 20px;
+}
+
+footer i{
+    color: red;
+}
+/* footer end */
+
+
+.totop{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: red;
+    padding: 1px;
+    border-radius: 20px;
+
+}
+
+.totop img{
+    width: 7vh;
+}
+
+@media (min-width:300px) and (max-width:1200px){
+    footer{
+        width: 100%;
+    }
+    .totop{
+        display: none;
+    }
+}
